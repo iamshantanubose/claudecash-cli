@@ -1,0 +1,45 @@
+{
+  "name": "@claudecash/cli",
+  "version": "0.3.0",
+  "description": "ClaudeCash CLI — earn money while Claude thinks",
+  "author": "Shantanu Bose <iamshantanubose@gmail.com> (https://www.linkedin.com/in/iamshantanubose)",
+  "main": "dist/index.js",
+  "bin": {
+    "claudecash": "dist/cli.js",
+    "claudecash-hook": "dist/hook.js",
+    "claudecash-report": "dist/report.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "claude",
+    "ai",
+    "monetize",
+    "ads",
+    "developer-tools"
+  ],
+  "license": "MIT",
+  "readme": "README.md",
+  "homepage": "https://claudecash.co",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamshantanubose/claudecash-cli"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "conf": "^12.0.0",
+    "ora": "^8.0.1",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "module"
+}
